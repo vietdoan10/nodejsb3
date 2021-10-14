@@ -5,6 +5,10 @@ const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 const sinhvienRoute = require('./sinhvien.route');
 const lopRoute = require('./lop.route');
+const peopleRoute = require('./people.route');
+const professionalRoute = require('./professional.route');
+const worksforRoute = require('./worksfor.route');
+const companiesRoute = require('./companies.route');
 
 const router = express.Router();
 
@@ -24,6 +28,22 @@ const defaultRoutes = [
   {
     path: '/lop',
     route: lopRoute,
+  },
+  {
+    path: '/people',
+    route: peopleRoute,
+  },
+  {
+    path: '/professional',
+    route: professionalRoute,
+  },
+  {
+    path: '/worksfor',
+    route: worksforRoute,
+  },
+  {
+    path: '/companies',
+    route: companiesRoute,
   },
 ];
 
